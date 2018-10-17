@@ -1,23 +1,17 @@
 
-
- const exersises = [
-
- ];
-
-
+ 
 class EApp {
         constructor(){
-            const Users = [
-                { name: 'name1'},
-                { name: 'name2'},
-                { name: 'name3'},
-                ];
+         this.Users = [];
+         this.exersises = [];
+         this.friends = [];
         }
     }
 class User{
     constructor(name){
         this.name = name;
-        this.exersises = [];
+        this.exersise = exersise;
+        this.friend = friend;
     }
 }
 

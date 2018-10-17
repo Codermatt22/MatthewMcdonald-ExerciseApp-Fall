@@ -10,9 +10,10 @@ route.get('/',function(req,res){
 })
 
 route.post('/Users',(req,res)=>{
-const user = new User(req.body.name);
+const user = new User(req.body.name)
+
 app.Users.push(user);
-res.send(user);
+res.send(users);
 });
 
 module.exports = route;
