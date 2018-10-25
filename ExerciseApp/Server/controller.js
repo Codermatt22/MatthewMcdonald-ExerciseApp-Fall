@@ -18,13 +18,23 @@ route.post('/users', function(req,res){
     res.send(user);
 });
 
-//Function for adding data to the usesr exersise list currently not completed
+route.get('/users/exersies',function(req,res){
+    const exersie = new Exersies(req.body.exersises)
+    res.send(exersie);
+})
+
+route.get('/users/exersies/:exersiesID',function(req,res){
+    res.send(req.params.exersiesID)
+})
+
 route.post('/users/exersies',function(req,res){
-      
-     const exersie = new Exersies(req.body.exersises)
-     User.exersisesList.push(exersie);
-     res.send(exersie);
-});
+    const exersie = new Exersies(req.body.exersises) 
+     name: req.body.name
+    app.Users.push(exersie)
+    res.send(exersie)
+})
+
+
 
 
 // post function for adding a new friend that data can be shared with.
