@@ -3,12 +3,13 @@
 class EApp {
         constructor(){
          this.Users = [];
+         this.CanBeSharedWithFirends = [];
         }
     }
 class User{
     constructor(name){
         this.name = name;
-        this.exersises = [];
+        this.exersisesList = [];
         this.friends = [];
     }
     
@@ -16,7 +17,9 @@ class User{
 //class for the different exersies not completed
 class Exersies{
      constructor(exersises){
-      this.exersises = ["pushup","squat"];
+     this.exersises = exersises;
+     //this.exersises = "pushup",
+     //this.exersises = "squat"
      }
 }
 //class for the different friends not completed
